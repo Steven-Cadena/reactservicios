@@ -5,13 +5,15 @@ import App from './components/App/App';
 import reportWebVitals from './reportWebVitals';
 import ServicioCustomers from './components/ServicioCustomers/ServicioCustomers';
 import BuscadorCustomer from './components/ServicioCustomers/BuscadorCustomer';
+import Buscadorcoches from './components/BuscadorCoches/Buscadorcoches';
 
 ReactDOM.render(
   <React.StrictMode>
     <div className="App">
     {/* <App /> 
-    <ServicioCustomers/>*/}
-    <BuscadorCustomer/>
+    <ServicioCustomers/>
+    <BuscadorCustomer/>*/}
+    <Buscadorcoches/>
     </div>
   </React.StrictMode>,
   document.getElementById('root')
