@@ -6,14 +6,16 @@ import reportWebVitals from './reportWebVitals';
 import ServicioCustomers from './components/ServicioCustomers/ServicioCustomers';
 import BuscadorCustomer from './components/ServicioCustomers/BuscadorCustomer';
 import Buscadorcoches from './components/BuscadorCoches/Buscadorcoches';
+import MaestroDetalleDepartamento from './components/MaestroDetalleDepartamento/MaestroDetalleDepartamento';
 
 ReactDOM.render(
   <React.StrictMode>
     <div className="App">
     {/* <App /> 
     <ServicioCustomers/>
-    <BuscadorCustomer/>*/}
-    <Buscadorcoches/>
+    <BuscadorCustomer/>
+    <Buscadorcoches/>*/}
+    <MaestroDetalleDepartamento/>
     </div>
   </React.StrictMode>,
   document.getElementById('root')
