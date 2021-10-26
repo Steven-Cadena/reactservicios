@@ -14,16 +14,15 @@ import Router from './components/Router';
 
 ReactDOM.render(
   <React.StrictMode>
-    <div className="App">
     {/* <App /> 
     <ServicioCustomers/>
     <BuscadorCustomer/>
     <Buscadorcoches/>
     <MaestroDetalleDepartamento/>
-    <MaestroDetalleDept/>*/}
+    <MaestroDetalleDept/>
     <Router/>
-    {/* <EmpleadosRouter/> */}
-    </div>
+     <EmpleadosRouter/> */}
+     <App/>
   </React.StrictMode>,
   document.getElementById('root')
 );
