@@ -6,12 +6,12 @@ import Popper from 'popper.js';
 import "bootstrap/dist/js/bootstrap.bundle";
 import MenuDepartamentos from '../Departamentos/MenuDepartamentos';
 import TablaDepartamentos from '../Departamentos/TablaDepartamentos';
+import Router from '../Router';
 
 function App() {
   return (
     <div className="App">
-      <MenuDepartamentos/>
-      <TablaDepartamentos/>
+      <Router/>
     </div>
   );
 }
