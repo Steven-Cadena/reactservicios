@@ -19,10 +19,10 @@ ReactDOM.render(
     <ServicioCustomers/>
     <BuscadorCustomer/>
     <Buscadorcoches/>
-    <MaestroDetalleDepartamento/>*/}
-    <MaestroDetalleDept/>
-    {/* <Router/>
-    <EmpleadosRouter/> */}
+    <MaestroDetalleDepartamento/>
+    <MaestroDetalleDept/>*/}
+    <Router/>
+    <EmpleadosRouter/>
     </div>
   </React.StrictMode>,
   document.getElementById('root')
