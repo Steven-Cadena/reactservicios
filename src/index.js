@@ -7,6 +7,10 @@ import ServicioCustomers from './components/ServicioCustomers/ServicioCustomers'
 import BuscadorCustomer from './components/ServicioCustomers/BuscadorCustomer';
 import Buscadorcoches from './components/BuscadorCoches/Buscadorcoches';
 import MaestroDetalleDepartamento from './components/MaestroDetalleDepartamento/MaestroDetalleDepartamento';
+import MaestroDetalleEmp from './components/MaestroDetalleDepartamento/MaestroDetalleEmp';
+import MaestroDetalleDept from './components/MaestroDetalleDepartamento/MaestroDetalleDept';
+import EmpleadosRouter from './components/RutasEmpleadosParametros/EmpleadosRouter';
+import Router from './components/Router';
 
 ReactDOM.render(
   <React.StrictMode>
@@ -14,8 +18,11 @@ ReactDOM.render(
     {/* <App /> 
     <ServicioCustomers/>
     <BuscadorCustomer/>
-    <Buscadorcoches/>*/}
-    <MaestroDetalleDepartamento/>
+    <Buscadorcoches/>
+    <MaestroDetalleDepartamento/>*/}
+    <MaestroDetalleDept/>
+    {/* <Router/>
+    <EmpleadosRouter/> */}
     </div>
   </React.StrictMode>,
   document.getElementById('root')
