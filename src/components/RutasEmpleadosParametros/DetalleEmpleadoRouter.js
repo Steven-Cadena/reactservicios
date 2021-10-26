@@ -24,7 +24,7 @@ export default class DetalleEmpleadoRouter extends Component {
             });
         });
     }
-
+    //SIRVE ESTE O EL constructor PARA CARGAR LA PÁGINA POR PRIMERA VEZ
     componentDidMount = () => {
         this.buscarEmpleado();
     }

@@ -8,6 +8,7 @@ export default class Router extends Component {
         return (
             <BrowserRouter>
                 <Switch>
+                    {/* id empleado es lo que recibe por parametro */}
                     <Route exact path="/detallesempleado/:idempleado" 
                         render={props=>{
                             var id = props.match.params.idempleado;
