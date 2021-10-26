@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 import Global from '../../Global';
+import { NavLink } from 'react-router-dom';
 
 export default class EmpleadosRouter extends Component {
     state = {
@@ -33,6 +34,7 @@ export default class EmpleadosRouter extends Component {
                             return (<li key={index}>
                                     {emp.apellido}
                                     <a href={"/detallesempleado/" + emp.idEmpleado}>Detalles</a>
+                                    <NavLink to={"/detallesempleado/" + emp.idEmpleado}>Detalles NavLink</NavLink>
                                 </li>)
                         })
                     )}

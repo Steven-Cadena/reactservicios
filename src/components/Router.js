@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import DetalleEmpleadoRouter from './RutasEmpleadosParametros/DetalleEmpleadoRouter';
+import EmpleadosRouter from './RutasEmpleadosParametros/EmpleadosRouter';
 
 export default class Router extends Component {
     render() {
@@ -13,6 +14,7 @@ export default class Router extends Component {
                             return <DetalleEmpleadoRouter idempleado={id}/>
                         }}/>
                 </Switch>
+                <EmpleadosRouter/>
             </BrowserRouter>
         )
     }

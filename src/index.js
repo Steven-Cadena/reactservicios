@@ -22,7 +22,7 @@ ReactDOM.render(
     <MaestroDetalleDepartamento/>
     <MaestroDetalleDept/>*/}
     <Router/>
-    <EmpleadosRouter/>
+    {/* <EmpleadosRouter/> */}
     </div>
   </React.StrictMode>,
   document.getElementById('root')
