@@ -6,6 +6,8 @@ import InsertarDepartamento from './Departamentos/InsertarDepartamento';
 import TablaDepartamentos from './Departamentos/TablaDepartamentos';
 import MenuDepartamentos from './Departamentos/MenuDepartamentos';
 import DetallesDepartamento from './Departamentos/DetallesDepartamento';
+import UpdateDepartamento from './Departamentos/UpdateDepartamento';
+import EliminarDepartamento from './Departamentos/EliminarDepartamento';
 
 export default class Router extends Component {
     render() {
@@ -28,6 +30,24 @@ export default class Router extends Component {
                                 nombre={nombre}
                                 localidad={localidad}/>)
                     }}/>
+                    <Route exact path="/updatedepartamento/:numero" 
+                    render={props=>{
+                        var deptno = props.match.params.numero;
+                        return (<UpdateDepartamento 
+                            iddepartamento={deptno}/>)
+                    }}/>
+                    <Route exact path="/deletedepartamento/:numero/:nombre/:localidad"
+                    render={props => {
+                        var num = props.match.params.numero;
+                        var nom = props.match.params.nombre;
+                        var loc = props.match.params.localidad;
+                        return (<EliminarDepartamento 
+                            iddepartamento={num}
+                            nombre={nom}
+                            localidad={loc}
+                        />)
+                    }}
+                    />
                     {/* id empleado es lo que recibe por parametro */}
                     {/* <Route exact path="/detallesempleado/:idempleado" 
                         render={props=>{

@@ -43,6 +43,13 @@ export default class TablaDepartamentos extends Component {
                                         <NavLink to={"/detallesdepartamento/" + dept.numero + 
                                     "/" + dept.nombre + "/" + dept.localidad} className="btn btn-success">
                                         Detalles
+                                        </NavLink> 
+                                        <NavLink to={"/updatedepartamento/" + dept.numero} className="btn btn-info">
+                                            Editar
+                                        </NavLink>
+                                        <NavLink to={"/deletedepartamento/" + dept.numero + 
+                                        "/" + dept.nombre + "/" + dept.localidad} className="btn btn-danger">
+                                            Eliminar
                                         </NavLink>
                                     </td>
                                 </tr>);

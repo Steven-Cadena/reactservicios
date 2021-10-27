@@ -13,6 +13,10 @@ export default class DetallesDepartamento extends Component {
                 <NavLink to={"/departamentos"} className="btn btn-success">
                     Volver al listado
                 </NavLink>
+
+                <NavLink to={"/updatedepartamento/" + this.props.iddepartamento} className="btn btn-info">
+                    Editar
+                </NavLink>
             </div>
         )
     }
