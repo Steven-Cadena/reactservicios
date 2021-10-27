@@ -5,6 +5,7 @@ import EmpleadosRouter from './RutasEmpleadosParametros/EmpleadosRouter';
 import InsertarDepartamento from './Departamentos/InsertarDepartamento';
 import TablaDepartamentos from './Departamentos/TablaDepartamentos';
 import MenuDepartamentos from './Departamentos/MenuDepartamentos';
+import DetallesDepartamento from './Departamentos/DetallesDepartamento';
 
 export default class Router extends Component {
     render() {
@@ -16,6 +17,17 @@ export default class Router extends Component {
                     component={TablaDepartamentos}/>
                     <Route exact path="/createdepartamento" 
                     component={InsertarDepartamento}/>
+                    {/* PARA DEVOLVER EL ACCION DEPARTAMENTO */}
+                    <Route exact path="/detallesdepartamento/:numero/:nombre/:localidad"
+                    render={props=>{
+                        var numero = props.match.params.numero;//para coger el numero del parametro
+                        var nombre = props.match.params.nombre;
+                        var localidad = props.match.params.localidad;
+                        return (<DetallesDepartamento 
+                                iddepartamento={numero}
+                                nombre={nombre}
+                                localidad={localidad}/>)
+                    }}/>
                     {/* id empleado es lo que recibe por parametro */}
                     {/* <Route exact path="/detallesempleado/:idempleado" 
                         render={props=>{

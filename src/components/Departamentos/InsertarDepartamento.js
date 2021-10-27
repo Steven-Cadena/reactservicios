@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import axios from 'axios';
 import Global from '../../Global';
+import { Redirect } from 'react-router';
 
 export default class InsertarDepartamento extends Component {
     cajanumeroRef = React.createRef();
@@ -27,12 +28,18 @@ export default class InsertarDepartamento extends Component {
         axios.post(url, departamento).then(res => {
             this.setState({
                 mensaje:"Departamento insertado correctamente."
+                , status: true
             });
         });
 
     }
     render() {
-        return (
+        
+            if (this.state.status == true){
+                return (<Redirect to="/departamentos"/>);
+            }
+
+            return (
             <div>
                 <h1>Nuevo departamento</h1>
                 <form style={{width:"500px" , margin:"0 auto", display:"table"}} onSubmit={this.InsertarDepartamento}>
